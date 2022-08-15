@@ -21,8 +21,8 @@
 .header {
   background-color: #393f4d;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column: 1 / span 2;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-column: 2 / span 2;
 }
 
 .menu ul,
@@ -34,7 +34,7 @@
   background-color: #ff7755;
   display: grid;
   gap: 50px;
-  grid-row: 2 / span 3;
+  grid-row: 1 / span 3;
 }
 
 .sidebar .photo {
@@ -54,6 +54,8 @@
 
 .nav {
   background-color: #ff7755;
+  display: grid;
+  grid-column: 2 / span 2;
 }
 
 .nav ul li {
@@ -63,6 +65,9 @@
 
 .projects {
   background-color: #bccbde;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 .projects p {
@@ -119,23 +124,13 @@
 
 .nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-column: 2 / span 2;
 }
 
 .projects > .card {
   height: 200px;
-}
-
-.footer {
-  display: grid;
-  grid-column: 1 / span 2;
 }
 
 .searchBar {
@@ -152,6 +147,18 @@
   border: 0 properties;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.rightBar {
+  display: grid;
+}
+
+.trendingBar {
+  display: grid;
+}
 /*
 ### Self Check
 - The header and footer span across both columns
