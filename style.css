@@ -77,19 +77,19 @@
   text-align: left;
 }
 
-.projects .card {
+.projects .project {
   background-color: #ffffff;
   color: black;
   text-align: center;
 }
 
-.card p {
+.project p {
   color: black;
   font-weight: normal;
   font-size: 14px;
 }
 
-.card .title {
+.caprojectd .title {
   font-size: 18px;
   text-align: center;
 }
@@ -129,7 +129,7 @@
   grid-column: 2 / span 2;
 }
 
-.projects > .card {
+.projects > .project {
   height: 200px;
 }
 
@@ -157,6 +157,10 @@
 }
 
 .trendingBar {
+  display: grid;
+}
+
+.search-container {
   display: grid;
 }
 /*
